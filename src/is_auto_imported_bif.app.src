@@ -1,15 +1,9 @@
-{application, is_auto_imported_bif,
- [{description, "An OTP library"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {maintainers, []},
-  {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+{application
+,is_auto_imported_bif
+,[{description, "Library which can tell us which function is Erlang auto imported BIF (is_atom/1, is_list/2, etc) or not"}
+ ,{vsn, "17.8.24"}
+ ,{applications, [kernel, stdlib]}
+ ,{modules, [is_auto_imported_bif]}
+ ,{maintainers, ["pouriya-jahanbakhsh@gmail.com"]}
+ ,{licenses, ["BSD 3-Clause"]}
+ ,{links, [{"GitHub", "https://github.com/Pouriya-Jahanbakhsh/is_auto_imported_bif"}]}]}.
